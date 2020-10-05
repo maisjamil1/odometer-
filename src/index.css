@@ -11,3 +11,110 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1,h3{
+  text-align: center;
+}
+header{
+  background-color: black;
+  color: #f5f5f5;
+  text-align: center
+}
+footer{
+  background-color: black;
+  color: #f5f5f5;
+  text-align: center
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #151515;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+.odometer-module {
+  display: inline-block;
+
+  border-radius: 4px;
+  border: 1px solid #6B6B6B;
+  overflow: hidden;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.odometer-buttons {
+  display: flex;
+}
+
+.odometer-buttons-top {
+  border-bottom: 1px solid #6b6b6b;
+}
+
+.odometer-buttons-bottom {
+  border-top: 1px solid #6b6b6b;
+}
+
+.odometer-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  flex-grow: 1;
+  border: 0;
+  padding: 6px 0;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 100ms ease;
+}
+
+.odometer-button:hover {
+  background-color: #f9f9f9;
+}
+
+.odometer-button:active {
+  background-color: #fff;
+}
+
+.odometer-button:nth-child(1) {
+  border-left: 1px solid #6b6b6b;
+  border-right: 1px solid #6b6b6b;
+}
+.odometer-button:nth-child(2) {
+  border-left: 1px solid #6b6b6b;
+  border-right: 1px solid #6b6b6b;
+}
+.odometer-button:nth-child(3) {
+  border-left: 1px solid #6b6b6b;
+  border-right: 1px solid #6b6b6b;
+}
+.odometer-button:nth-child(4) {
+  border-left: 1px solid #6b6b6b;
+  border-right: 1px solid #6b6b6b;
+}
+
+.odometer-value {
+  border: 0;
+  display: block;
+  font-family: Consolas, monospace;
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 10px;
+  padding: 5px 6px 5px calc(10px + 6px);
+  text-align: center;
+  color: #272727;
+  width: 180px;
+  -moz-appearance: textfield;
+}
+
+.odometer-value::-webkit-outer-spin-button,
+.odometer-value::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
